@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "losemod",
+  "version": "${version}",
+  "name": "LoseMod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/losemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.losemod.client.LoseModClient"
+    ],
+    "main": [
+      "com.losemod.LoseMod"
+    ]
+  },
+  "mixins": [
+    "losemod.mixins.json",
+    {
+      "config": "losemod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
