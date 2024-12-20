@@ -4,6 +4,7 @@
   "package": "com.losemod.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "LoseMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -6,6 +6,6 @@ public class LoseMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModItems.registerModItems();
+        ModItems.registerItems();
     }
 }
